@@ -1,4 +1,2 @@
 .exercism/
-node-modules/
-.md
-!README.md
+node-modules
