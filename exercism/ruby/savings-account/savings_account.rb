@@ -7,14 +7,14 @@ module SavingsAccount
       1.621
     when 5000.0..Float::INFINITY
       2.475
-    else 
+    else
       3.213
     end
   end
 
   def self.annual_balance_update(balance)
     interest_rate = (self.interest_rate(balance) / 100) + 1
-    updated_balance = balance * interest_rate
+    balance * interest_rate
   end
 
   def self.years_before_desired_balance(current_balance, desired_balance)
