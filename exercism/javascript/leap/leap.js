@@ -3,6 +3,14 @@
 // convenience to get you started writing code faster.
 //
 
-export const isLeap = () => {
-  throw new Error('Remove this statement and implement this function');
+export function isLeap(year) {
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      return year % 400 === 0;
+    } else {
+      return true
+    }
+  } else {
+    return false
+  }
 };
