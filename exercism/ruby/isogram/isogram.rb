@@ -1,7 +1,12 @@
-=begin
-Write your code for the 'Isogram' exercise in this file. Make the tests in
-`isogram_test.rb` pass.
+def isogram?(str)
+  return true if str.empty?
 
-To get started with TDD, see the `README.md` file in your
-`ruby/isogram` directory.
-=end
+  chars = {}
+  str.downcase.each_char do |char|
+    return false if chars.include?(char)
+    next if char =~ /[[:space:]]/ || char =~ /[[:punct:]]/
+
+    chars[char] = 1
+  end
+  true
+end
