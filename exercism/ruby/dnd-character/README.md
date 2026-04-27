@@ -47,6 +47,10 @@ One such language is [Troll][troll].
 
 [dnd]: https://en.wikipedia.org/wiki/Dungeons_%26_Dragons
 
+In this exercise you should define a `DndCharacter` class with:
+- A static method for `modifier(constitution)`.
+- Methods for `strength`, `dexterity`, `constitution`, `intelligence`, `wisdom`, `charisma`, and `hitpoints`
+
 ## Source
 
 ### Created by
